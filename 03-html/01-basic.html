@@ -37,6 +37,38 @@
 
     <!-- 페이지 본문 -->
     <body>
+        <!-- input tag -->
+        <form action="">
+            <!-- text -->
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" autocomplete="on" />
+
+            <!-- radio -->
+            <input type="radio" name="color" id="red" />
+            <label for="red">빨강</label>
+            <input type="radio" name="color" id="blue" />
+            <label for="blue">파랑</label>
+            <input type="radio" name="color" id="yellow" />
+            <label for="yellow">노랑</label>
+
+            <!-- checkbox -->
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree">동의합니다.</label>
+
+            <!-- selectbox -->
+            <label for="fruit">선호 과일</label>
+            <select name="fruit" id="fruit">
+                <option value="apple">apple</option>
+                <option value="melon">melon</option>
+            </select>
+
+            <!-- submit -->
+            <input type="submit" value="전송" />
+        </form>
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        <br /><br />
         <!-- 이미지 분기대응 -->
         <picture>
             <!-- 600px 이하 -->

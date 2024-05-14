@@ -21,10 +21,120 @@
         <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
         <meta name="twitter:domain" content="사이트 명" />
         <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+        <!-- 스타일 시트 -->
+        <style>
+            /* 선택자 {속성: 값;} */
+            /* class 선택자 .(점) 표기 */
+            .box1 {
+                background-color: pink;
+            }
+            /* id 선택자 #(샵) 표기 */
+            #box1 {
+                background-color: blue;
+            }
+        </style>
     </head>
 
     <!-- 페이지 본문 -->
     <body>
+        <!-- 이미지 분기대응 -->
+        <picture>
+            <!-- 600px 이하 -->
+            <source media="(max-width: 600px)" srcset="./images/img_smallflower.jpg" />
+            <!-- 1500px 이하 -->
+            <source media="(max-width: 1500px)" srcset="./images/img_flowers.jpg" />
+            <!-- 1500px 이상 -->
+            <source srcset="./images/flowers.jpg" />
+            <img src="./images/img_smallflower.jpg" alt="" />
+        </picture>
+
+        <!-- layout 태그 -->
+        <!-- .wrap / #wrap -->
+        <div class="wrap">
+            <header>
+                <h1>
+                    <a href="#">logo</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">menu1</a>
+                            <ul>
+                                <li><a href="#">menu1-1</a></li>
+                                <li><a href="#">menu1-2</a></li>
+                                <li><a href="#">menu1-3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">menu2</a>
+                        </li>
+                        <li>
+                            <a href="#">menu3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- 주제별 나눔 -->
+                <section>
+                    <h2>section title</h2>
+                    <p>section content</p>
+                </section>
+                <section>
+                    <h2>section title</h2>
+                    <p>section content</p>
+                </section>
+                <!-- 독립된 기사나 글 -->
+                <article>
+                    <h2>article title</h2>
+                    <p>article content</p>
+                </article>
+                <!-- 사이드 컨텐츠 -->
+                <aside></aside>
+            </main>
+            <footer>footer</footer>
+        </div>
+
+        <!-- div 태그 -->
+        <!-- 웹페이지의 섹션을 그룹화하는데 사용됨 -->
+        <div class="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <div class="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <!-- id값은 중복 사용 금지 -->
+        <div id="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <div id="box2">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <hr />
+        <!-- 블록 & 인라인 태그 -->
+
+        <!-- block -->
+        <!-- 기본값 : width 100% -->
+        <!-- 밑으로 쌓인다 -->
+        <div>block</div>
+        <div>block</div>
+        <div>block</div>
+
+        <!-- inline -->
+        <!-- width, height 적용 안됨 -->
+        <span>inline</span>
+        <span>inline</span>
+        <span>inline-추가추가</span>
+
+        <hr />
         <!-- 제목 태그 -->
         <h1>logo - 블로그</h1>
         <h2>섹션 타이틀</h2>
@@ -62,7 +172,7 @@
             <!-- 열 그룹 -->
             <colgroup>
                 <col style="width: 50%" />
-                <col span="2" />
+                <col span="2" style="width: 25%" />
             </colgroup>
             <!-- 테이블 머릿글 -->
             <thead>
@@ -129,17 +239,5 @@
             <dt>제목</dt>
             <dd>설명</dd>
         </dl>
-
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
     </body>
 </html>

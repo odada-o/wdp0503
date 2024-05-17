@@ -1,0 +1,28 @@
+/* 기본 셋팅 값 : reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: lightpink;
+}
+
+#header {
+    background-color: lightblue;
+}
+#header #logo a {
+    color: red;
+}
+
+#gnb > ul > li {
+    border: 1px solid green;
+}
+
+.main-intro {
+    border: 1px solid red;
+}
+
+.bg-grey {
+    background-color: #f0f0f0;
+}

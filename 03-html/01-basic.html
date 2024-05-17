@@ -37,38 +37,105 @@
 
     <!-- 페이지 본문 -->
     <body>
+        <!-- 미디어 태그 -->
+        <!-- 비디오 태그 -->
+        <video controls autoplay muted>
+            <source src="./images/mov_bbb.webm" />
+            <source src="./images/mov_bbb.mp4" />
+        </video>
+
+        <!-- youtube tag -->
+        <iframe
+            width="1276"
+            height="718"
+            src="https://www.youtube.com/embed/gxec4Fi-u3s?controls=0&autoplay=1&mute=1&loop=1"
+            title="암컷과 수컷중 누가 더 애교가 많을까? 고양이 암컷과 수컷의 차이"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+
         <!-- input tag -->
         <form action="">
-            <!-- text -->
-            <label for="name">이름</label>
-            <input type="text" name="name" id="name" autocomplete="on" />
-
-            <!-- radio -->
-            <input type="radio" name="color" id="red" />
-            <label for="red">빨강</label>
-            <input type="radio" name="color" id="blue" />
-            <label for="blue">파랑</label>
-            <input type="radio" name="color" id="yellow" />
-            <label for="yellow">노랑</label>
-
-            <!-- checkbox -->
-            <input type="checkbox" name="agree" id="agree" />
-            <label for="agree">동의합니다.</label>
-
-            <!-- selectbox -->
-            <label for="fruit">선호 과일</label>
-            <select name="fruit" id="fruit">
-                <option value="apple">apple</option>
-                <option value="melon">melon</option>
-            </select>
-
-            <!-- submit -->
-            <input type="submit" value="전송" />
+            <fieldset>
+                <legend>폼 캡션</legend>
+                <!-- text -->
+                <label for="name">이름</label>
+                <input required type="text" value="정미애" readonly name="name" id="name" autocomplete="on" />
+                <br /><br />
+                <!-- password -->
+                <label for="password">비밀번호</label>
+                <input
+                    required
+                    type="password"
+                    placeholder="문자, 숫자, 특수 문자 포함 10자 이상"
+                    name="password"
+                    id="password"
+                />
+                <br /><br />
+                <!-- email -->
+                <label for="email">이메일</label>
+                <input required type="email" placeholder="mail@mail.com" name="email" id="email" />
+                <br /><br />
+                <!-- number -->
+                <label for="number">숫자</label>
+                <input type="number" maxlength="4" name="number" id="number" />
+                <br /><br />
+                <!-- search -->
+                <label for="search">검색</label>
+                <input type="search" maxlength="4" name="search" id="search" />
+                <br /><br />
+                <!-- tel -->
+                <label for="tel">핸드폰 번호</label>
+                <input required type="tel" value="01000000000" readonly maxlength="11" name="tel" id="tel" />
+                <br /><br />
+                <!-- url -->
+                <label for="url">URL</label>
+                <input type="url" disabled name="url" id="url" />
+                <br /><br />
+                <!-- file -->
+                <label for="file">파일</label>
+                <input type="file" name="file" id="file" />
+                <br /><br />
+                <!-- radio -->
+                <input type="radio" name="color" id="red" />
+                <label for="red">빨강</label>
+                <input type="radio" name="color" id="blue" />
+                <label for="blue">파랑</label>
+                <input type="radio" name="color" id="yellow" />
+                <label for="yellow">노랑</label>
+                <br /><br />
+                <!-- checkbox -->
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree">동의합니다.</label>
+                <br /><br />
+                <!-- selectbox -->
+                <label for="fruit">선호 과일</label>
+                <select name="fruit" id="fruit">
+                    <option value="apple">apple</option>
+                    <option value="melon">melon</option>
+                </select>
+                <br /><br />
+                <!-- textarea -->
+                <label for="message">메시지</label>
+                <textarea name="message" id="message" rows="10" cols="20"></textarea>
+                <br /><br />
+                <!-- button -->
+                <!-- 동적인 액션 -->
+                <button>검색</button>
+                <!-- 단순 링크 표시 -->
+                <a href="#">링크</a>
+                <br /><br />
+                <!-- submit -->
+                <input type="reset" value="취소" />
+                <input type="submit" value="전송" />
+            </fieldset>
         </form>
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <!-- 이미지 분기대응 -->
         <picture>
             <!-- 600px 이하 -->
@@ -175,8 +242,8 @@
         <!-- 주석 -->
         <!-- 문단 태그 -->
         <p>
-            <strong>중요한 텍스트</strong> <br />
-            <b>굵은 텍스트</b> <em>Lorem ipsum dolor</em> sit amet <br />
+            <strong>중요한 텍스트</strong> <br /><br />
+            <b>굵은 텍스트</b> <em>Lorem ipsum dolor</em> sit amet <br /><br />
             consectetur adipisicing elit. Nam incidunt iusto ab neque odio voluptates! Illo sit commodi veniam neque
             reiciendis soluta odio aut dolorem vitae vel ex, necessitatibus quas.
         </p>

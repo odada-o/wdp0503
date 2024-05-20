@@ -10,7 +10,8 @@ main {
 }
 
 #header {
-    background-color: lightblue;
+    /* background-color: #add8e6; */
+    background-color: rgba(173, 216, 230, 0.5);
 }
 #header #logo a {
     color: red;

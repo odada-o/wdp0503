@@ -33,11 +33,38 @@ header nav {
     align-items: center;
 }
 
-.slide ul li {
-    width: 100%;
-    border: 1px solid blue;
+/* slide */
+.slide {
+    background: lightblue;
 }
 .slide ul {
     display: flex;
     width: 300%;
+}
+.slide ul li {
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+/* contents */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main section {
+    width: 32%;
+    height: 300px;
+    border: 1px solid red;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer div {
+    width: 15%;
+    height: 100px;
+}
+footer .copyright {
+    width: 60%;
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #222;
+                line-height: 1.5;
+                letter-spacing: -0.5px;
+                list-style: none;
+            }
+            .wrap {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid #000;
+            }
+            .slide {
+                border: 2px solid #d3ff36;
+            }
+            .slide ul {
+                display: flex;
+                justify-content: space-between;
+            }
+            .slide li {
+                width: 30%;
+                height: 200px;
+                background-color: #fffd7c;
+                text-align: center;
+                line-height: 200px;
+            }
+            main {
+                display: flex;
+                justify-content: space-between;
+                border: 2px solid #ff7c7c;
+            }
+            section {
+                width: 32%;
+                height: 200px;
+                background-color: #ffcbcb;
+            }
+            footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid #7c7cff;
+            }
+            footer .copyright {
+                width: 70%;
+                background-color: #cfcfff;
+            }
+            footer .sns {
+                width: 30%;
+            }
+            footer .sns div {
+                background-color: #7cff7c;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <h1>
+                    <a href="#">로고</a>
+                </h1>
+                <nav>gnb</nav>
+            </header>
+            <div class="slide">
+                <ul>
+                    <li>slide1</li>
+                    <li>slide2</li>
+                    <li>slide3</li>
+                </ul>
+            </div>
+            <main>
+                <section>공지사항</section>
+                <section>갤러리</section>
+                <section>바로가기</section>
+            </main>
+            <footer>
+                <div class="copyright">copyright</div>
+                <div class="sns">
+                    <div>sns</div>
+                    <div>패밀리 사이트</div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

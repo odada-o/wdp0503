@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 | css</title>
+</head>
+<body>
+
+    <h1>선택자</h1>
+
+    <h2>태그 선택자</h2>
+    
+    <div class="wrap">
+        wrap
+        <div class="util">util</div>
+        <header class="header">
+            header
+            <h1 class="logo">
+                <a href="#">logo</a>
+            </h1>
+            <nav class="gnb">
+                nav
+            </nav>
+        </header>
+    </div>
+    <style>
+        .wrap {
+            border: 5px solid rgb(255, 0, 0);
+            background: rgb(255, 0, 0);
+        }
+        .util {
+            background: rgba(251, 255, 0, 0.5);
+        }
+        .header {
+            border: 5px solid pink;
+        }
+        .logo {
+            background: #000;
+        }
+        .logo a {
+            font-size: 18px;
+            color: #fff;
+        }
+        .gnb {
+            border: 5px solid rgba(0, 0, 255, 0.5);
+        }
+    </style>
+
+    <br><br><br>
+    <div id="gnb">
+        <ul class="depth1">
+            <li class="fst">
+                <a href="#">menu1</a>
+                <ul class="depth2-1">
+                    <li><a href="#">menu1-1</a></li>
+                    <li><a href="#">menu1-2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">menu2</a>
+                <ul class="depth2-2">
+                    <li><a href="#">menu2-1</a></li>
+                    <li><a href="#">menu2-2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">menu3</a>
+                <ul class="depth2-3">
+                    <li><a href="#">menu3-1</a></li>
+                    <li><a href="#">menu3-2</a></li>
+                </ul>
+            </li>
+            <li class="lst">
+                <a href="#">menu4</a>
+                <ul class="depth2-4">
+                    <li><a href="#">menu4-1</a></li>
+                    <li><a href="#">menu4-2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .depth1 > li > a {
+            border: 3px solid #ff097c;
+        }
+        .depth1 .lst > a,
+        .depth1 .fst > a {
+            background: red;
+        }
+        #gnb {
+            border: 5px solid tomato;
+        }
+        .depth2-1 {
+            border: 3px solid turquoise;
+        }
+        .depth2-1 li {
+            background: #54f9ff;
+        }
+        .depth2-3 a { 
+            background: #a3ff10;
+        }
+        ul {
+            border: 3px solid #000;
+        }
+        li {
+            margin: 10px;
+            background: #fff491;
+        }
+        ul li {
+            background: #ffbbbb;
+        }
+        ul.depth1 > li {
+            background: #a48fff;
+        }
+    </style>
+    
+</body>
+</html>

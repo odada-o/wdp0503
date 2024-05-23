@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font | css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Kablammo&display=swap" rel="stylesheet">
+    <!-- 웹디자인기능사용 reset -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            color: #222328;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            /* 안전 글꼴 */
+            font-family: "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>font</h1>
+
+    <h2>일반</h2>
+    <div class="font1">
+        <strong>타이틀</strong>
+        <p>모든 인류 구성원의 천부의 존엄성과 동등하고 양도할 수 없는 권리를 인정하는</p>
+        <!-- em태그 절대값 60px -->
+        <em>기울어짐 <br> <span>기울어짐</span></em> <br>
+        <!-- b태그 상대값 60px(기준 14px) -->
+        <b>기울어짐 <br> <span>기울어짐</span></b>
+    </div>
+    <style>
+        h2 {
+            font-size: 60px;
+            font-family: 'Gasoek One', sans-serif;
+        }
+        .font1 strong {
+            font-family: 'Diphylleia', sans-serif;
+            font-size: 40px;
+            font-weight: normal;
+        }
+        .font1 p {
+            font-family: 'Diphylleia', serif;
+        }
+        .font1 em {
+            font-style: normal;
+            /* font-weight: bold; */
+            font-size: 60px;
+        }
+        .font1 em span {
+            /* font-size : 60px */
+            /* em : 엄마 태그를 기준으로 */
+            font-size: 1em;
+        }
+
+        .font1 b {
+            /* font-size : 60px; */
+            font-size: 3.750em;
+        }
+        .font1 b span {
+            /* font-size : 16px; */
+            /* rem : html,body 태그 기준 */
+            font-size : 1rem;
+        }
+    </style>
+
+    <h2>font size</h2>
+
+    <strong>vw</strong>
+    <div class="vw">Responsive Text</div>
+    <div class="vh">Responsive Text</div>
+    <style>
+        .vw {
+            font-family: 'Kablammo', cursive;
+            font-size: 17vw;
+        }
+        .vh {
+            font-family: 'Kablammo', cursive;
+            font-size: 10vh;
+        }
+    </style>
+
+    <h2>text</h2>
+
+    <strong>vertical align</strong>
+    <div class="ver">
+        <img src="./images/youtube.png" alt="youtube"> 유튜브
+    </div>
+    <style>
+        .ver {
+            font-size: 30px;
+        }
+        .ver img {
+            vertical-align: middle;
+            margin-top: -5px;
+        }
+    </style>
+
+    <strong>decoration</strong>
+    <a href="#">글씨글씨 난 글씨야 넌 뭐니?</a>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <h2>shadow</h2>
+    <div class="box1">가나다라마바사</div>
+    <style>
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 300px;
+            margin: 50px auto;
+            background-color: #999;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0 0 8px #000;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+
+    <h2>text-overflow (말줄임)</h2>
+    <ul class="lst-bbs">
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+        </li>
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+        </li>
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+        </li>
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+        </li>
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a>
+        </li>
+    </ul>
+    <style>
+        .lst-bbs a {
+            overflow: hidden;
+            display: block;
+            width: 300px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background: red;
+        }
+    </style>
+
+
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+</body>
+</html> 

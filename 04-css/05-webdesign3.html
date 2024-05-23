@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #222;
+                line-height: 1.5;
+                letter-spacing: -0.5px;
+                list-style: none;
+            }
+            .wrap {
+                display: flex;
+                height: calc(100vh - 100px);
+            }
+            header {
+                width: 200px;
+                background: #ffe6e6;
+            }
+            main {
+                width: 400px;
+                background: #e6ffec;
+            }
+            .slide {
+                width: calc(100% - 200px - 400px);
+                background: #e6e6ff;
+            }
+            footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100px;
+                background: #fffbf0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <h1>
+                    <a href="#">logo</a>
+                </h1>
+                <nav>gnb</nav>
+            </header>
+            <main>
+                <section>공지사항</section>
+                <section>갤러리</section>
+                <section>바로가기</section>
+            </main>
+            <div class="slide">이미지</div>
+        </div>
+        <footer>
+            <div>로고</div>
+            <div class="copyright">copyright</div>
+            <div>패밀리 사이트</div>
+        </footer>
+    </body>
+</html>

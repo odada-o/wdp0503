@@ -8,6 +8,47 @@
     <body>
         <h1>background</h1>
 
+        <h2>sprite image</h2>
+        <div class="sp1"></div>
+        <div class="sp2"></div>
+        <style>
+            .sp2 {
+                width: 68px;
+                height: 68px;
+                background: url(./images/sprite-0521.png) no-repeat -400px -115px;
+            }
+            .sp1 {
+                width: 140px;
+                height: 135px;
+                background: url(./images/sprite-0521.png) no-repeat 0 0;
+            }
+        </style>
+
+        <h2>background-size</h2>
+        <a href="#" class="box2">라이트 모드로 보기</a>
+        <a href="#" class="box3">라이트 모드로 보기</a>
+        <style>
+            .box3 {
+                display: block;
+                width: 182px;
+                height: 90px;
+                /* background-image: url('./images/btn.png');
+                background-repeat: no-repeat; */
+                background: #eee url('./images/btn.png') no-repeat 0 0;
+                background-size: cover;
+                text-indent: -9999px;
+            }
+            .box2 {
+                display: block;
+                width: 182px;
+                height: 90px;
+                background-image: url('./images/btn.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                text-indent: -9999px;
+            }
+        </style>
+
         <h2>background-color</h2>
         <div class="bg1">background-color</div>
         <style>
@@ -20,8 +61,13 @@
         <div class="box1"></div>
         <style>
             .box1 {
-                height: 200px;
-                background-image: url('https://images.unsplash.com/photo-1585352422918-14286bb536e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8');
+                width: 400px;
+                height: 400px;
+                background-color: #eee;
+                background-image: url('./images/10627436.png');
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 300px auto;
             }
         </style>
     </body>

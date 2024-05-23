@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    list-style: none;
+}
+
+.wrap {
+    width: 600px;
+    /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background: lightgray;
+}
+header h1 {
+    display: flex;
+}
+header h1 a {
+    display: flex;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.slide ul li {
+    width: 100%;
+    border: 1px solid blue;
+}
+.slide ul {
+    display: flex;
+    width: 300%;
+}

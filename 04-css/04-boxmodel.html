@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>boxModel</title>
+    </head>
+    <body>
+        <h1>boxModel</h1>
+
+        <h2>padding</h2>
+        <div class="box5">menu1</div>
+        <div class="box6">menu2</div>
+        <div class="box7">menu3</div>
+        <style>
+            .box7 {
+                display: inline-block;
+                padding: 10px 25px 50px 70px;
+                background: lightgreen;
+            }
+            .box6 {
+                display: inline-block;
+                padding: 10px 25px;
+                background: lightblue;
+            }
+            .box5 {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                box-sizing: border-box;
+                background: lightcoral;
+            }
+        </style>
+
+        <h2>margin</h2>
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <style>
+            .box4 {
+                width: 200px;
+                height: 200px;
+                background: blue;
+                /* margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 400px; */
+                margin: 100px auto 50px;
+            }
+        </style>
+
+        <h2>max-width</h2>
+        <div class="box2"></div>
+        <style>
+            .box2 {
+                max-width: 1280px;
+                /* max-width: none(기본값) */
+                min-width: 360px;
+                /* min-width: 0(기본값) */
+                width: 100%;
+                height: 200px;
+                margin: 0 auto;
+                background: lightpink;
+            }
+        </style>
+
+        <h2>width & height</h2>
+        <div class="box1"></div>
+        <div class="box1-1">100% & 100vh</div>
+
+        <style>
+            .box1-1 {
+                width: 100%;
+                height: 100vh;
+                background: wheat;
+            }
+            .box1 {
+                /* width: auto(100%) 기본값 */
+                /* width: 50%; */
+                /* height: auto(0) 기본값 */
+                height: 200px;
+                background: lightblue;
+            }
+        </style>
+    </body>
+</html>

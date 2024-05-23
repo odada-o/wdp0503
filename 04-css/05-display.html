@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>display</title>
+    </head>
+    <body>
+        <h1>display</h1>
+
+        <h2>flex</h2>
+
+        <a href="#" class="btn-flex">버튼</a>
+        <style>
+            .btn-flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+                height: 200px;
+                background: lavender;
+            }
+        </style>
+
+        <div class="flex justify">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+        </div>
+        <style>
+            .justify {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+
+        <div class="flex wrap">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </div>
+        <style>
+            .wrap {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+
+        <div class="flex direction">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+        </div>
+
+        <style>
+            .direction {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex {
+                border: 5px solid lavender;
+            }
+            .flex div {
+                min-width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: lightgreen;
+            }
+        </style>
+
+        <h2>none</h2>
+        <div class="box4"></div>
+        <style>
+            .box4 {
+                display: none;
+                /* display: block 다시 보이게... */
+                width: 100px;
+                height: 100px;
+                background: lightgray;
+            }
+        </style>
+
+        <div class="flex items">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+        </div>
+        <style>
+            .items {
+                display: flex;
+                height: 300px;
+                align-items: center;
+            }
+            .items div {
+                height: auto;
+            }
+        </style>
+
+        <h2>inline-block</h2>
+        <a href="#" class="box3">menu1</a>
+        <a href="#" class="box3">menu2</a>
+        <a href="#" class="box3">menu3</a>
+        <style>
+            .box3 {
+                /* block: 가로세로 사이즈 셋팅 가능 */
+                /* inline: 옆으로 배치 */
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+                background: lightgreen;
+                text-align: center;
+                line-height: 50px;
+            }
+        </style>
+
+        <h2>inline(글자 한개)</h2>
+        <!-- inline : 가로, 세로값 안들어감 -->
+        <span class="box2">글자</span>
+        <span class="box2">글자</span>
+        <style>
+            .box2 {
+                width: 100px;
+                height: 100px;
+                background: lightblue;
+            }
+        </style>
+
+        <h2>block</h2>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <style>
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background: lightcoral;
+            }
+        </style>
+    </body>
+</html>

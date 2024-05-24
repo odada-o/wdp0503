@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>overflow</title>
+    </head>
+    <body>
+        <h1>overflow</h1>
+
+        <h2>visible</h2>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut consequatur et eaque, nostrum
+            laudantium voluptates id fuga. Modi dolor alias sapiente optio sed odio inventore blanditiis nam, reiciendis
+            labore?
+        </div>
+        <style>
+            .box {
+                width: 150px;
+                height: 150px;
+                background: rgb(247, 255, 172);
+            }
+        </style>
+
+        <h2>hidden</h2>
+        <div class="box hidden">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima repellat quia tempore reprehenderit
+            cupiditate iste natus voluptates atque ipsam dicta sed, exercitationem excepturi consequatur veritatis sunt
+            commodi quos! Unde, in!
+        </div>
+        <style>
+            .hidden {
+                overflow: hidden;
+            }
+        </style>
+
+        <h2>scroll</h2>
+        <div class="box scroll">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequuntur distinctio eius nesciunt
+            velit adipisci minus neque explicabo impedit officia excepturi, deserunt aspernatur amet ducimus dolor
+            aliquam! Harum, ipsam quis?
+        </div>
+        <style>
+            .scroll {
+                overflow: scroll;
+            }
+        </style>
+
+        <h2>auto</h2>
+        <div class="box auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nemo ratione recusandae iste quas quod doloremque, earum et asperiores mollitia vel laborum obcaecati
+            magni vitae, expedita eum, beatae maxime amet illo!
+        </div>
+        <style>
+            .auto {
+                overflow: auto;
+            }
+        </style>
+    </body>
+</html>

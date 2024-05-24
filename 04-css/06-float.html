@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>float</title>
+        <style>
+            .wrap {
+                width: 600px;
+                margin: 0 auto;
+            }
+            header {
+                /* clearfix하는 방법 */
+                /* overflow: auto; */
+                /* height: 100px; */
+                background-color: #b3d6ff;
+            }
+            header::after {
+                content: '';
+                clear: both;
+                display: block;
+            }
+            header h1 {
+                float: left;
+            }
+            header nav {
+                float: right;
+            }
+            main {
+                overflow: hidden;
+                background: #9fffbd;
+            }
+            main section {
+                float: left;
+                width: 32%;
+                margin-right: 2%;
+                /* 32% * 3 = 96% */
+            }
+            main section:last-child {
+                margin-right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <h1>logo</h1>
+                <nav>gnb</nav>
+            </header>
+            <main>
+                <section>공지사항</section>
+                <section>배너</section>
+                <section>바로가기</section>
+            </main>
+            <footer>
+                <p>footer</p>
+            </footer>
+        </div>
+    </body>
+</html>

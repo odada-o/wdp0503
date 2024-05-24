@@ -10,6 +10,92 @@
 
         <h2>flex</h2>
 
+        <h3>flex-items</h3>
+        <style>
+            .basis {
+                display: flex;
+            }
+            .basis div {
+                flex-basis: 0;
+            }
+        </style>
+        <div class="flex basis">
+            <div>가</div>
+            <div>가나</div>
+            <div>가나다</div>
+        </div>
+
+        <style>
+            .shrink {
+                display: flex;
+            }
+            .shrink div {
+                width: 100px;
+                min-width: 0 !important;
+            }
+            .shrink div:nth-child(3) {
+                flex-shrink: 0;
+            }
+        </style>
+        <div class="flex shrink">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+        </div>
+
+        <style>
+            .wrap2 {
+                display: flex;
+            }
+            header {
+                width: 50px;
+                background-color: lightblue;
+            }
+            main {
+                width: 100px;
+                background-color: lightgoldenrodyellow;
+            }
+            .slide {
+                flex-grow: 1;
+                background-color: lightcoral;
+            }
+        </style>
+        <div class="wrap2">
+            <header>header</header>
+            <main>main</main>
+            <div class="slide">slide</div>
+        </div>
+        <br /><br />
+        <style>
+            .order {
+                display: flex;
+            }
+            .order div:first-child {
+                order: 2;
+            }
+            .order div:nth-child(2) {
+                order: 3;
+            }
+            .order div:last-child {
+                order: 1;
+            }
+        </style>
+        <div class="flex order">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+        </div>
+
+        <h3>flex-container</h3>
         <a href="#" class="btn-flex">버튼</a>
         <style>
             .btn-flex {
@@ -67,12 +153,14 @@
                 flex-direction: column;
             }
             .flex {
+                display: flex;
+                gap: 10px;
                 border: 5px solid lavender;
             }
             .flex div {
-                min-width: 100px;
+                /* min-width: 100px; */
                 height: 100px;
-                margin: 10px;
+                /* margin: 10px; */
                 background: lightgreen;
             }
         </style>

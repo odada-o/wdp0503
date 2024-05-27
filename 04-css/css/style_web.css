@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    background: lightgray;
+    /* background: lightgray; */
 }
 header h1 {
     display: flex;
@@ -28,9 +28,18 @@ header h1 a {
     display: flex;
     align-items: center;
 }
-header nav {
+#gnb {
     display: flex;
     align-items: center;
+}
+#gnb .depth1 {
+    display: flex;
+}
+#gnb .depth1 > li > a {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
 }
 
 /* slide */
@@ -81,6 +90,7 @@ footer .copyright {
 }
 
 #layerPop {
+    display: none;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -93,6 +103,8 @@ footer .copyright {
     /* width: 100%;
     height: 100%; */
     background: rgba(0, 0, 0, 0.5);
+    /* background: #000;
+    opacity: 0.5; */
 }
 #layerPop .layer {
     display: flex;
@@ -107,12 +119,15 @@ footer .copyright {
     height: 300px;
     padding: 40px;
     background: #fff;
+    border-radius: 20px;
 }
 #layerPop .layer h2 {
     text-align: center;
 }
 #layerPop .layer p {
+    overflow: auto;
     flex: 1;
+    max-height: 110px;
 }
 #layerPop .layer button {
     width: 100px;

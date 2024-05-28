@@ -65,7 +65,7 @@ header h1 a {
 /* 모든 메뉴 다 보이게... */
 /* #gnb .depth1:hover > li .depth2 { */
 /* li 각각에 보이게... */
-#gnb .depth1 > li:hover .depth2 {
+#gnb .depth1:hover > li .depth2 {
     display: block;
 }
 #gnb .depth2 {
@@ -84,6 +84,18 @@ header h1 a {
 }
 #gnb .depth2 li a:hover {
     color: red;
+}
+#gnb:hover .nav-bg {
+    display: block;
+}
+#gnb .nav-bg {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
 }
 
 /* slide */

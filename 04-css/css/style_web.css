@@ -10,7 +10,7 @@
 }
 
 .wrap {
-    width: 600px;
+    width: 1200px;
     /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
     margin: 0 auto;
 }
@@ -99,6 +99,52 @@ header h1 a {
 }
 
 /* slide */
+.swiper img {
+    width: 100%;
+}
+.slide-intro .swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+}
+.slide-intro .slide-txt {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    /* text-align: center; */
+    width: 50%;
+    color: #fff;
+}
+.slide-intro .slide-txt strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+}
+.slide-intro .slide-txt p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.7;
+}
+.slide-intro .slide-txt a {
+    display: inline-block;
+    padding: 12px 40px 8px;
+    background: #007aff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
 .slide {
     overflow: hidden;
     position: relative;

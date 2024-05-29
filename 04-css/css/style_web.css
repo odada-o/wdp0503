@@ -181,6 +181,7 @@ main {
 }
 .sec-g .sec-tit {
     display: inline-block;
+    margin-bottom: 50px;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -188,6 +189,30 @@ main {
 }
 .sec-g .sec-tit span {
     color: #007aff;
+}
+
+.sec-business .sec-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.sec-business .col-left {
+    width: 50%;
+}
+.sec-business .col-left img {
+    width: 100%;
+}
+.sec-business .col-right {
+    width: 50%;
+    padding: 60px 0 0 80px;
+}
+.sec-business .text-wrap .tit {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.sec-business .text-wrap .txt {
+    font-size: 18px;
+    color: #575757;
 }
 
 /* main section {

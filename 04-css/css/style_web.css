@@ -9,10 +9,16 @@
     list-style: none;
 }
 
+/* 공통 클래스 */
+.bg-grey {
+    background: #f9f9f9;
+}
+
 .wrap {
     width: 1200px;
     /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
     margin: 0 auto;
+    padding-bottom: 1000px;
 }
 
 header {
@@ -166,18 +172,33 @@ header h1 a {
 /* contents */
 main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
 }
-main section {
-    /* flex-grow: 1;
+
+.sec-g {
+    padding: 170px 0;
+}
+.sec-g .sec-tit {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px solid #007aff;
+}
+.sec-g .sec-tit span {
+    color: #007aff;
+}
+
+/* main section {
+    flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 0; */
+    flex-basis: 0;
     flex: 1 1 0;
-    /* width: 32%; */
+    width: 32%;
     height: 300px;
     border: 1px solid red;
-}
+} */
 footer {
     display: flex;
     justify-content: space-between;

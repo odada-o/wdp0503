@@ -1,3 +1,5 @@
+@import 'fonts.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -141,6 +143,11 @@ header h1 a {
 /* slide */
 .swiper img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-intro {
+    border-radius: 0 0 100px 100px;
 }
 .slide-intro .swiper-slide::before {
     content: '';
@@ -164,8 +171,8 @@ header h1 a {
 .slide-intro .slide-txt strong {
     display: block;
     margin-bottom: 20px;
+    font-family: 'MoveSans-light';
     font-size: 40px;
-    font-weight: bold;
     line-height: 1.2;
     color: #fff;
 }
@@ -202,6 +209,11 @@ header h1 a {
     height: 300px;
     border: 1px solid blue;
 }
+
+/* .swiper-slide {
+    width: 600px !important;
+    margin-right: 0 !important;
+} */
 
 /* contents */
 main {
@@ -240,6 +252,8 @@ main {
     height: 470px;
     object-fit: cover;
     object-position: 20% 50%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 .sec-business .col-right {
     width: 50%;
@@ -285,10 +299,24 @@ main {
     gap: 20px;
 }
 .sec-news .list-news li {
-    flex: 1;
+    /* flex: 1; */
+    width: 30%;
 }
 .sec-news .list-news img {
     width: 100%;
+}
+.sec-news .txt strong {
+    display: block;
+    margin: 30px 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+.sec-news .txt em {
+    font-style: normal;
 }
 
 /* main section {

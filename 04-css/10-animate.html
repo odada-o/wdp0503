@@ -8,8 +8,8 @@
     <body>
         <h1>animate</h1>
         <div class="box">
-            <div class="circle"></div>
             <div class="square"></div>
+            <div class="circle"></div>
         </div>
 
         <style>
@@ -21,7 +21,7 @@
                 height: 300px;
                 background: lightblue;
                 opacity: 0.7;
-                animation: square-ani 2s;
+                animation: square-ani 2s forwards ease-in;
             }
             @keyframes square-ani {
                 0% {
@@ -29,7 +29,7 @@
                     left: -300px;
                 }
                 50% {
-                    top: 100%;
+                    top: 90%;
                     left: 30%;
                 }
                 100% {
@@ -47,6 +47,27 @@
                 background: lightcoral;
                 border-radius: 50%;
                 opacity: 0.5;
+                animation: circle-ani 3s 2s forwards ease-in-out;
+            }
+            @keyframes circle-ani {
+                0% {
+                    top: 20%;
+                    left: 30%;
+                    width: 500px;
+                    height: 500px;
+                }
+                50% {
+                    top: 50%;
+                    left: 50%;
+                    width: 300px;
+                    height: 300px;
+                }
+                100% {
+                    top: 45%;
+                    left: 64%;
+                    width: 200px;
+                    height: 200px;
+                }
             }
             .box {
                 width: 100%;

@@ -4,10 +4,53 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>animate</title>
+        <style>
+            * {
+                margin: 0;
+            }
+        </style>
     </head>
     <body>
         <h1>animate</h1>
-        <div class="box">
+        <div class="text-slide">
+            <div class="box">
+                (시작)Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quos blanditiis repellat
+                debitis possimus quae laboriosam nemo consequuntur deserunt error. Ratione nobis dolorum cupiditate
+                suscipit sed hic sunt voluptates distinctio?(끝)
+            </div>
+            <div class="box">
+                (시작)Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quos blanditiis repellat
+                debitis possimus quae laboriosam nemo consequuntur deserunt error. Ratione nobis dolorum cupiditate
+                suscipit sed hic sunt voluptates distinctio?(끝)
+            </div>
+        </div>
+        <style>
+            .text-slide .box {
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                white-space: nowrap;
+                transform: translateX(0);
+                animation: textslide-ani 10s infinite linear;
+            }
+            @keyframes textslide-ani {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .text-slide {
+                overflow: hidden;
+                display: flex;
+                padding: 40px 0;
+                background: #000;
+            }
+        </style>
+        <br /><br /><br /><br />
+        <div class="container">
             <div class="square"></div>
             <div class="circle"></div>
         </div>
@@ -69,7 +112,9 @@
                     height: 200px;
                 }
             }
-            .box {
+            .container {
+                position: relative;
+                overflow: hidden;
                 width: 100%;
                 height: 100vh;
                 background: #eee;

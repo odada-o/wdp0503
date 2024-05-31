@@ -16,6 +16,9 @@
 }
 
 /* 공통 컴포넌트 */
+a:hover {
+    text-decoration: underline;
+}
 .bg-grey {
     background: #f9f9f9;
 }
@@ -324,6 +327,12 @@ main {
     position: relative;
     overflow: hidden;
     height: 270px;
+}
+.sec-news li .thumb img {
+    transition: transform 0.3s;
+}
+.sec-news li:hover .thumb img {
+    transform: scale(1.05);
 }
 .sec-news .thumb img {
     width: 100%;

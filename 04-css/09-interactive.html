@@ -6,9 +6,10 @@
         <title>Interactive</title>
         <style>
             .box div {
+                transition: all 1s;
                 width: 200px;
                 height: 200px;
-                background-color: rgb(255, 19, 255);
+                background-color: rgb(255, 19, 255, 0.3);
             }
             .box {
                 width: 200px;
@@ -28,12 +29,28 @@
         <div class="box">
             <div class="t2"></div>
         </div>
+        <div class="box">
+            <div class="t3"></div>
+        </div>
+        <div class="box">
+            <div class="t4"></div>
+        </div>
         <style>
-            .t2 {
-                transform: rotate(45deg);
+            .t4:hover {
+                transform: skew(30deg);
+                background-color: lightcoral;
             }
-            .t1 {
+            .t3:hover {
+                transform: scale(2);
+                background-color: lightcoral;
+            }
+            .t2:hover {
+                transform: rotate(45deg);
+                background-color: lightcoral;
+            }
+            .t1:hover {
                 transform: translate(50px, -50px);
+                background-color: lightcoral;
             }
         </style>
     </body>

@@ -1,4 +1,8 @@
 @import 'fonts.css';
+/* 변수 저장 */
+:root {
+    --swiper-theme-color: #ff0000;
+}
 
 * {
     margin: 0;
@@ -25,6 +29,7 @@
     border: 1px solid #d1d1d1;
     border-radius: 30px;
     color: #007aff;
+    transition: all 0.3s;
 }
 .btn-g:hover {
     border: 1px solid #007aff;
@@ -149,6 +154,7 @@ header h1 a {
 .slide-intro {
     border-radius: 0 0 100px 100px;
 }
+
 .slide-intro .swiper-slide::before {
     content: '';
     position: absolute;
@@ -168,10 +174,19 @@ header h1 a {
     width: 50%;
     color: #fff;
 }
+.slide-intro .swiper-slide .slide-txt {
+    transform: translateY(0);
+    opacity: 0;
+    transition: all 1s ease-in 0.5s;
+}
+.slide-intro .swiper-slide-active .slide-txt {
+    transform: translateY(-50%);
+    opacity: 1;
+}
 .slide-intro .slide-txt strong {
     display: block;
     margin-bottom: 20px;
-    font-family: 'MoveSans-light';
+    font-family: 'MoveSans-Bold';
     font-size: 40px;
     line-height: 1.2;
     color: #fff;
@@ -304,6 +319,27 @@ main {
 }
 .sec-news .list-news img {
     width: 100%;
+}
+.sec-news .thumb {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+}
+.sec-news .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.sec-news .thumb::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.03);
 }
 .sec-news .txt strong {
     display: block;

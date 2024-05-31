@@ -11,9 +11,9 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'MoveSans';
+    font-family: 'MoveSans-Bold2';
     src: url('../fonts/MoveSans-Bold.woff2');
-    font-weight: 700;
+    /* font-weight: 700; */
     font-style: normal;
 }
 

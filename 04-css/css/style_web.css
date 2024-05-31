@@ -63,13 +63,13 @@ a:hover {
     right: 0;
 }
 
+/* layout */
 .wrap {
-    width: 1200px;
+    max-width: 1260px;
     /* block 요소, 나 자신을 가운데 정렬하고 싶을 때 */
     margin: 0 auto;
-    padding-bottom: 1000px;
+    padding: 0 30px;
 }
-
 header {
     position: relative;
     z-index: 1000;
@@ -157,6 +157,44 @@ header h1 a {
     width: 100%;
     height: 100px;
     background: var(--white);
+}
+#gnb .btn-menu {
+    display: none;
+}
+#gnb .btn-menu i {
+    font-size: 30px;
+}
+#gnb .btn-menu span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: lightblue;
+    }
+    .wrap {
+        padding: 0 30px;
+    }
+    #gnb .btn-menu {
+        display: block;
+    }
+    #gnb .depth1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+    .wrap {
+        padding: 0 20px;
+    }
 }
 
 /* slide */
@@ -270,6 +308,7 @@ main {
     position: relative;
 }
 
+/* sec-business */
 .sec-business .sec-cont {
     display: flex;
     justify-content: space-between;
@@ -323,6 +362,7 @@ main {
     color: var(--white);
 }
 
+/* sec-news */
 .sec-news .list-news {
     display: flex;
     justify-content: space-between;
@@ -397,6 +437,7 @@ footer .copyright {
     width: 60%;
 }
 
+/* #layerPop */
 #layerPop {
     display: none;
     /* display: flex;

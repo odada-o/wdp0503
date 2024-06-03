@@ -160,9 +160,11 @@ header h1 a {
 }
 #gnb .btn-menu {
     display: none;
+    background: none;
+    border: none;
 }
 #gnb .btn-menu i {
-    font-size: 30px;
+    font-size: 50px;
 }
 #gnb .btn-menu span {
     position: absolute;
@@ -172,7 +174,7 @@ header h1 a {
     font-size: 0;
     line-height: 0;
 }
-
+/* tablet */
 @media screen and (max-width: 1200px) {
     body {
         background-color: lightblue;
@@ -184,10 +186,22 @@ header h1 a {
         display: block;
     }
     #gnb .depth1 {
-        display: none;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 30px;
+        background: var(--white);
+    }
+    #gnb .depth1 > li {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: rgba(241, 247, 250, 0.94);
     }
 }
-
+/* mobile */
 @media screen and (max-width: 600px) {
     body {
         background-color: olive;

@@ -184,21 +184,46 @@ header h1 a {
     }
     #gnb .btn-menu {
         display: block;
+        postion: relative;
+        z-index: 1100;
     }
     #gnb .depth1 {
         display: block;
         position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 30px;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        padding: 100px 30px 30px;
         background: var(--white);
+        transition: left 0.3s;
     }
     #gnb .depth1 > li {
         margin-bottom: 20px;
         border-radius: 10px;
         background-color: rgba(241, 247, 250, 0.94);
+    }
+    #gnb .depth1 > li > a {
+        position: relative;
+    }
+    #gnb .depth1 > li > a::after {
+        content: "\f067";
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        font-family: 'Line Awesome Free';
+        font-weight: 900;
+        font-size: 20px;
+    }
+    #gnb .depth2 {
+        position: static;
+        background-color: transparent;
+    }
+    #gnb .active .depth2 {
+        padding-bottom: 20px;
+        max-height: none;
+        opacity: 1;
     }
 }
 /* mobile */

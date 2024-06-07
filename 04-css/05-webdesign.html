@@ -10,8 +10,10 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/style_web.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script defer src="./js/script.js"></script>
+        <script src="./js/comm.js"></script>
         <!-- defer 하단의 html 코드를 먼저 읽고 스크립트 적용 -->
     </head>
     <body>
@@ -19,15 +21,18 @@
         <div class="wrap">
             <!-- header -->
             <header>
-                <h1>
-                    <a href="#">logo</a>
+                <h1 id="logo">
+                    <a href="#">
+                        logo
+                        <span>- sublogo</span>
+                    </a>
                 </h1>
                 <nav id="gnb">
                     <!-- <button class="btn-menu">
                         <i class="las la-bars"></i>
                         <span>전체메뉴 보기</span>
                     </button> -->
-                    <input type="checkbox" name="btnMenu" id="btnMenu" class="btn-menu">
+                    <input type="checkbox" name="btnMenu" id="btnMenu" class="btn-menu" />
                     <label for="btnMenu" class="label-menu">
                         <span>전체메뉴 보기</span>
                     </label>

@@ -7,6 +7,10 @@
     --white: #fff;
     --black: #000;
     --swiper-theme-color: var(--primary);
+
+    /* breakpoint */
+    --break-tablet: 1200px;
+    --break-mobile: 600px;
 }
 
 * {
@@ -18,6 +22,17 @@
     line-height: 1.5;
     letter-spacing: -0.5px;
     list-style: none;
+    font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 24px;
+    }
 }
 
 /* 공통 컴포넌트 */
@@ -54,13 +69,18 @@ a:hover {
     margin-left: 10px;
     font-family: 'Line Awesome Free';
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1.4286rem;
 }
 
 .btn-more {
     position: absolute;
     top: -120px;
     right: 0;
+}
+@media screen and (max-width: 600px) {
+  .btn-g {
+    min-width: 0;
+  }
 }
 
 /* layout */
@@ -84,6 +104,10 @@ header h1 {
 header h1 a {
     display: flex;
     align-items: center;
+    font-size: 2.857rem;
+}
+header h1 a span {
+    font-size: 1rem;
 }
 #gnb {
     display: flex;
@@ -140,7 +164,7 @@ header h1 a {
 #gnb .depth2 li a {
     display: block;
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
 }
 #gnb .depth2 li a:hover {
@@ -199,7 +223,7 @@ header h1 a {
         transform: translateY(-50%);
         font-family: 'Line Awesome Free';
         font-weight: 900;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     #gnb .depth2 {
         position: static;
@@ -303,13 +327,13 @@ header h1 a {
     display: block;
     margin-bottom: 20px;
     font-family: 'MoveSans-Bold';
-    font-size: 40px;
+    font-size: 2.8571rem;
     line-height: 1.2;
     color: var(--white);
 }
 .slide-intro .slide-txt p {
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 1.4286rem;
     color: var(--white);
     opacity: 0.7;
 }
@@ -359,7 +383,7 @@ main {
 .sec-g .sec-tit {
     display: inline-block;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 3.5714rem;
     font-weight: bold;
     text-align: center;
     border-bottom: 5px solid var(--primary);
@@ -393,11 +417,11 @@ main {
 }
 .sec-business .text-wrap .tit {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 2.8571rem;
     font-weight: 700;
 }
 .sec-business .text-wrap .txt {
-    font-size: 18px;
+    font-size: 1.2857rem;
     color: #575757;
 }
 .sec-business .btn-wrap {
@@ -410,6 +434,20 @@ main {
     width: 250px;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .sec-business .sec-cont {
+    flex-direction: column
+  }
+  .sec-business .col-left {
+    width: 100%;
+  }
+  .sec-business .col-right {
+    width: 100%;
+    padding: 60px 0 0;
+  }
+}
+
+
 .banner {
     display: flex;
     justify-content: center;
@@ -420,7 +458,7 @@ main {
     /* background-size: cover; */
     /* background-attachment: fixed; */
     text-align: center;
-    font-size: 30px;
+    font-size: 2.1429rem;
     font-weight: bold;
     color: var(--white);
 }
@@ -468,7 +506,7 @@ main {
 .sec-news .txt strong {
     display: block;
     margin: 30px 0 15px;
-    font-size: 20px;
+    font-size: 1.4286rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
@@ -477,6 +515,14 @@ main {
 }
 .sec-news .txt em {
     font-style: normal;
+}
+@media screen and (max-width: 600px) {
+  .sec-news .list-news {
+    flex-direction: column;
+  }
+  .sec-news .list-news li {
+    width: 100%;
+  }
 }
 
 /* main section {

@@ -78,9 +78,9 @@ a:hover {
     right: 0;
 }
 @media screen and (max-width: 600px) {
-  .btn-g {
-    min-width: 0;
-  }
+    .btn-g {
+        min-width: 0;
+    }
 }
 
 /* layout */
@@ -97,6 +97,14 @@ header {
     justify-content: space-between;
     height: 100px;
     /* background: lightgray; */
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 header h1 {
     display: flex;
@@ -216,7 +224,7 @@ header h1 a span {
         position: relative;
     }
     #gnb .depth1 > li > a::after {
-        content: "\f067";
+        content: '\f067';
         position: absolute;
         top: 50%;
         right: 40px;
@@ -249,12 +257,12 @@ header h1 a span {
         background: none;
         border: none;
     }
-    #gnb .label-menu{
+    #gnb .label-menu {
         position: relative;
         z-index: 1200;
     }
     #gnb .label-menu::before {
-        content: "\f0c9";
+        content: '\f0c9';
         font-family: 'Line Awesome Free';
         font-weight: 900;
         font-size: 50px;
@@ -268,7 +276,7 @@ header h1 a span {
         line-height: 0;
     }
     #btnMenu:checked + .label-menu::before {
-        content: "\f00d";
+        content: '\f00d';
     }
     #btnMenu:checked ~ .depth1 {
         left: 0;
@@ -435,18 +443,17 @@ main {
     margin-bottom: 10px;
 }
 @media screen and (max-width: 1200px) {
-  .sec-business .sec-cont {
-    flex-direction: column
-  }
-  .sec-business .col-left {
-    width: 100%;
-  }
-  .sec-business .col-right {
-    width: 100%;
-    padding: 60px 0 0;
-  }
+    .sec-business .sec-cont {
+        flex-direction: column;
+    }
+    .sec-business .col-left {
+        width: 100%;
+    }
+    .sec-business .col-right {
+        width: 100%;
+        padding: 60px 0 0;
+    }
 }
-
 
 .banner {
     display: flex;
@@ -517,12 +524,12 @@ main {
     font-style: normal;
 }
 @media screen and (max-width: 600px) {
-  .sec-news .list-news {
-    flex-direction: column;
-  }
-  .sec-news .list-news li {
-    width: 100%;
-  }
+    .sec-news .list-news {
+        flex-direction: column;
+    }
+    .sec-news .list-news li {
+        width: 100%;
+    }
 }
 
 /* main section {

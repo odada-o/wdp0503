@@ -99,6 +99,7 @@ if (aa === 1) {
 // slide
 let current = 0
 const lstSlide = document.querySelector('.slide ul')
+const slideCount = document.querySelectorAll('.slide li').length
 
 // 3초마다 슬라이드가 넘어가도록
 // setInterval(함수, 시간)
@@ -107,4 +108,11 @@ setInterval(function () {
 }, 3000)
 
 // 슬라이드 함수 정의
-function slide() {}
+function slide() {
+    // current 0, 1, 2
+    // 0 * -100% = 0 (left: 0)
+    // 1 * -100% = -100% (left: -100%)
+    // 2 * -100% = -200% (left: -200%)
+    current = (current + 1) % slideCount
+    lstSlide.style.left = current * -100 + '%'
+}

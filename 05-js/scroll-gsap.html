@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>scroll gsap</title>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <style>
+            .container div {
+                width: 100px;
+                height: 100px;
+            }
+            .item1 {
+                background: lightblue;
+            }
+            .item2 {
+                background: lightcoral;
+            }
+            .item3 {
+                background: lightgreen;
+            }
+            section {
+                height: 100vh;
+                border: 5px solid #000;
+            }
+            .box1 {
+                width: 200px;
+                height: 200px;
+                margin-top: 200px;
+                background: lightblue;
+            }
+            .box2 {
+                width: 200px;
+                height: 200px;
+                margin-top: 200px;
+                background: lightcoral;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="sec1">
+            <div class="box1"></div>
+        </section>
+        <section class="sec2">
+            <div class="box2"></div>
+        </section>
+
+        <div class="container">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+        </div>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.to('.box1', {
+                x: 300,
+                y: 200,
+                scale: 2,
+                borderRadius: '50%',
+                duration: 2,
+                scrollTrigger: {
+                    trigger: '.sec1',
+                    start: '30% 20%',
+                    end: '100% 80%',
+                    scrub: 1,
+                    markers: true,
+                },
+            });
+
+            gsap.to('.box2', {
+                x: 400,
+                scale: 2,
+                rotation: 360,
+                borderRadius: '50%',
+                duration: 2,
+                scrollTrigger: {
+                    trigger: '.sec2',
+                    start: '10% 10%',
+                    end: '100% 90%',
+                    scrub: 1,
+                    markers: true,
+                },
+            });
+
+            // const tl = gsap.timeline();
+            // gsap.to('타겟', 옵션값);
+            gsap.timeline()
+                .to(
+                    '.item1',
+                    {
+                        x: 500,
+                        rotation: 360,
+                        duration: 2,
+                    },
+                    0.5, // 시작 시간 0.5초 뒤에 시작
+                )
+                .to(
+                    '.item2',
+                    {
+                        y: 500,
+                        scale: 2,
+                        duration: 1,
+                    },
+                    '-=1', // 이전 애니메이션의 1초 전에 시작
+                )
+                .to(
+                    '.item3',
+                    {
+                        x: -500,
+                        y: -500,
+                        duration: 1,
+                    },
+                    '+=1', // 이전 애니메이션의 1초 후에 시작
+                );
+        </script>
+    </body>
+</html>

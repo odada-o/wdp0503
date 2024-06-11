@@ -5,10 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>scroll-js</title>
         <style>
+            .container {
+                height: 300vh;
+                background: url('https://images.unsplash.com/photo-1611311034548-fd7a8cabf596?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+                    no-repeat 50% 0 / cover;
+            }
             .item {
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
                 background: lightblue;
+                transform-origin: 0 0;
+            }
+            .item2 {
+                position: absolute;
+                top: 400px;
+                left: -100%;
+                width: auto;
+                background: rgb(128, 223, 240);
+                /* transform: translateX(-100%); */
+            }
+            .item3 {
+                background: rgb(240, 128, 227);
+            }
+            .box {
+                display: flex;
+                list-style: none;
+            }
+            .box li {
+                width: 200px;
+                height: 160px;
+                margin: 20px;
+                background: #00ff3c;
             }
         </style>
         <script>
@@ -17,7 +44,15 @@
     </head>
     <body>
         <div class="container">
-            <div class="item">item1</div>
+            <div class="item item1">item1</div>
+            <div class="item item2">
+                <ul class="box">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- <div class="item item3">item3</div> -->
         </div>
         <script>
             // 준비 이벤트 넣어주지 않아도 됌
@@ -25,6 +60,19 @@
 
             item.style.backgroundColor = 'lightcoral';
             item.style.transform = 'translate(100px 200px)';
+
+            // window.addEventListener('이벤트', 함수);
+            window.addEventListener('scroll', function () {
+                const item1 = document.querySelector('.item1');
+                const item2 = document.querySelector('.item2');
+
+                const scrolled = window.scrollY; // 스크롤된 양
+                console.log('스크롤 값 : ', scrolled);
+                console.log(`스크롤 값의 50% : ${scrolled * 0.5}`);
+
+                item1.style.transform = `scale(${scrolled * 0.01})`;
+                item2.style.transform = `translateX(${scrolled}px)`;
+            });
         </script>
     </body>
 </html>

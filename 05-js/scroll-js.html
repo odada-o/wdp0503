@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>scroll-js</title>
+        <style>
+            .item {
+                width: 300px;
+                height: 300px;
+                background: lightblue;
+            }
+        </style>
+        <script>
+            // 준비 이벤트 넣어줘야 함
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">item1</div>
+        </div>
+        <script>
+            // 준비 이벤트 넣어주지 않아도 됌
+            const item = document.querySelector('.item');
+
+            item.style.backgroundColor = 'lightcoral';
+            item.style.transform = 'translate(100px 200px)';
+        </script>
+    </body>
+</html>

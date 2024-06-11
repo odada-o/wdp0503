@@ -394,10 +394,11 @@ main {
     font-size: 3.5714rem;
     font-weight: bold;
     text-align: center;
-    border-bottom: 5px solid var(--primary);
+    /* border-bottom: 5px solid var(--primary); */
 }
 .sec-g .sec-tit span {
     color: var(--primary);
+    font-size: 1em;
 }
 .sec-g .sec-cont {
     position: relative;

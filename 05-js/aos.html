@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>aos</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            .extra {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+                font-size: 3rem;
+            }
+            .aos div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+                height: 300px;
+                margin: 50px auto;
+                background-color: lightcoral;
+                color: #fff;
+                font-size: 3rem;
+            }
+            .item--fixed {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 20px;
+                margin: auto;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="extra">
+            <span data-aos="fade-up">aos 할꺼임</span>
+        </div>
+        <div class="aos">
+            <div class="item1">item1</div>
+            <div class="item2">item2</div>
+            <div class="item3">item3</div>
+            <div class="item2">item4</div>
+            <div class="item3">item5</div>
+        </div>
+        <div class="extra"><span data-aos="fade-up">aos 끝</span></div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            });
+        </script>
+    </body>
+</html>

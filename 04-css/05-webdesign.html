@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -12,6 +13,7 @@
         <link rel="stylesheet" href="./css/style_web.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script defer src="./js/script.js"></script>
         <script src="./js/comm.js"></script>
         <!-- defer 하단의 html 코드를 먼저 읽고 스크립트 적용 -->
@@ -140,10 +142,15 @@
                     <h2 class="sec-tit"><span>웰컴복지재단</span>의 복지사업</h2>
                     <div class="sec-cont">
                         <div class="col-left">
-                            <img src="https://welcomefare.co.kr/images/main/business-slide1-image1.jpg" alt="" />
+                            <img
+                                src="https://welcomefare.co.kr/images/main/business-slide1-image1.jpg"
+                                alt=""
+                                data-aos="fade-up"
+                                data-aos-delay="50"
+                            />
                         </div>
                         <div class="col-right">
-                            <div class="text-wrap">
+                            <div class="text-wrap" data-aos="fade-up" data-aos-delay="100">
                                 <h3 class="tit">아동복지사업</h3>
                                 <p class="txt">
                                     지역아동센터의 원활한 운영을 위해 재단의 예산을 지원하여 건강한 사회 구성원으로
@@ -151,7 +158,7 @@
                                 </p>
                             </div>
 
-                            <div class="btn-wrap">
+                            <div class="btn-wrap" data-aos="fade-up" data-aos-offset="-100" data-aos-delay="150">
                                 <a class="btn-g btn-arrow" href="#">지역아동센터사업</a>
                                 <a class="btn-g btn-arrow" href="#">우리동네키움센터사업</a>
                                 <a class="btn-g btn-arrow" href="#">어린이집사업</a>

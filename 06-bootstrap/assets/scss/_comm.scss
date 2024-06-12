@@ -1,0 +1,9 @@
+.sec-jumbo {
+    padding: 150px 0;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-nav {
+        margin: 0 auto;
+    }
+}

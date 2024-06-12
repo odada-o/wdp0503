@@ -259,12 +259,16 @@ legend {
   content: "";
 }
 
-.sec-jumbo {
-  padding: 150px 0;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgb(255, 0, 0);
 }
 
 @media (min-width: 576px) {
   .navbar-expand-sm .navbar-nav {
     margin: 0 auto;
   }
+}
+.sec-jumbo {
+  padding: 150px 0;
 }/*# sourceMappingURL=styles.css.map */
